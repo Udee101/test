@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="admin.css">
+<script src="https://kit.fontawesome.com/e798a7469a.js" crossorigin="anonymous"></script>
+<title>Dashboard</title>
+</head>
+<body>
+	<div class="container">
+		<div class="position">
+			<!--------- Amounts ---------->
+			<p class="head">Hi, Admin</p>
+				<div class="column1">
+					<div class="money first">
+						<div class="tag">Platform Balance</div>
+					<span class="naira-value"> ₦1,230,800</span>
+					</div>
+					
+					<div class="money second">
+					<div class="tag">Total Credit</div>
+					<span class="naira-value"> ₦1,230,800</span>
+					</div>
+					
+					<div class="money third">
+					<div  class="tag">Total Deposit</div>
+					<span class="naira-value"> ₦230,800</span>
+					</div>
+					
+				</div>
+				
+				<div  class="column2">
+					<p>Transactions</p>
+					<div class="typesearch">
+						
+						<i class="fa fa-search"></i><input type="text" name="" placeholder="search">
+					</div>
+				</div>
+				
+				<div class="filter">
+					<label for="Filter">Filter:</label>
+						<div class="Byservice select">
+						<input type="text" name="payment" placeholder="By Service">
+						</div>
+						
+						<div class="Bytrans  select">	
+							<input type="text" name="payment" placeholder="By Trans type">
+						</div>
+						
+						<div class="Byamount select">
+							<input type="text" name="payment" placeholder="By Amount">
+						</div>
+			
+				</div>	
+			
+		</div>
+		
+		
+		<!-- Transaction Table -->
+		<section class="transactions">
+			<div>
+				<table>
+					<tr>
+						<th>#</th>
+						<th>Tx ID</th>
+						<th>User ID</th>
+						<th>Service</th>
+						<th>Tx Type</th>
+						<th>Amount</th>
+					<tr>	
+						<td>1</td>
+						<td>Tx35627</td>
+						<td>ID88483</td>
+						<td>Contribution</td>
+						<td class="third">Debit</td>
+						<td>1,500,000</td>
+					<tr>
+						<td>2</td>
+						<td>Tx09387</td>
+						<td>AD488</td>
+						<td>Fixed Deposit</td>
+						<td class="second">Credit</td>
+						<td>500,000</td>
+					<tr>
+						<td>3</td>
+						<td>Tx277884</td>
+						<td>ID88948</td>
+						<td>Loans</td>
+						<td class="second">Credit</td>
+						<td>850,000</td>
+				</table>		
+			</div>
+		</section>
+		<div class="table-page">
+			<a href="#"><i class="fas fa-caret-left"></i></a>
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a class="actv"href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#"><i class="fas fa-caret-right"></i></a>
+		</div>
+</body>
+</html>

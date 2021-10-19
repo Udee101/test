@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+	
+}
+.container{
+	padding: 25px;
+}
+.container .head{
+	font-size: 30px;
+}
+
+.money{
+	display: block;
+	height: 130px;
+	width: auto;
+	background: linear-gradient(to bottom, rgb(7, 173, 173), rgb(8, 38, 38));
+	color: white;
+	font-size: 14px;
+	line-height: 30px;
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 15px 0;
+	border-radius: 20px;
+}
+.tag{
+	margin-bottom: 20px;
+}
+.naira-value{
+	font-size: 40px;
+	margin-top: 10px;
+}
+.savings{
+	height: 100px;
+	width: auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	justify-items: start; 
+	background: whitesmoke;
+	color: gray;
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 15px 0;
+	border-radius: 5px;
+}
+.fa-piggy-bank{
+	align-items: left;
+	font-size: 20px;
+	color: #4fd152;
+}
+.fa-suitcase{
+	font-size: 20px;
+	color: #57628c;
+}
+.center{
+	display: justify;
+	align-items: center;
+}
+.head2{
+	font-size: 22px;
+	margin-top: 30px;
+}
+.view{
+	display: flex;
+	justify-content: center;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.Facilitator{
+	width: auto;
+	height: 400px;
+	background: white;
+	margin-top: 35px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+}
+.Facilitator .p1{
+	font-size: 28px;
+	padding: 20px 0 5px;
+	text-align: center;
+}
+.Facilitator .p2{
+	font-size: 16px;
+	text-align: center;
+}
+img{
+	width: 250px;
+	height: 200px;
+	
+}
+.image{
+	display: flex;
+	justify-content: center;
+}
+.btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.btn1{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 15px 27px;
+	color: #fff;
+	background: #4fd152; 
+	border: none;
+	border-radius: 50px;
+}
+	
+@media(min-width:800px){
+	.firstgrid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 20px;
+	}
+	.main{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 10px;
+	}
+	
+	
+}
