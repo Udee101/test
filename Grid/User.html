@@ -1,10 +1,29 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
-<link rel="stylesheet" href="User.css">
-<script src="https://kit.fontawesome.com/e798a7469a.js" crossorigin="anonymous"></script>
-<title>Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="User.css">
+	<script src="https://kit.fontawesome.com/e798a7469a.js" crossorigin="anonymous"></script>
+	<title>User Dashboard</title>
 </head>
 <body>
+	
+	<!-- SIDE MENU -->
+	<div class= "side-menu">
+		<ul>
+			<li><a href="User.html" style="background: #fff; color:#0e0e2e;"><i class="fas fa-home"></i>Dashboard</a></li>
+			<li><a href="#"><i class="fas fa-piggy-bank bk"></i>Savings</a></li>
+			<li><a href="#"><i class="fas fa-coins"></i>Loans</a></a></li>
+			<li><a href="#"><i class="fas fa-project-diagram"></i>Facilitators</a></li>
+			<li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+		</ul>
+		<div class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></div>
+	</div>
+	
 	<div class="container">
 	
 	<!--------- Loans ---------->
@@ -107,14 +126,54 @@
 			
 			
 			<!-- Facilitator -->
-			<div class="Facilitator">
+			<div class="facilitator">
 				<p class="p1">Become a Facilitator</p>
-				<div class="image"><img src="001.jpg"></div>
+				<div class="image"><img src="/images/001.jpg"></div>
 				<p class="p2">Become a facilitator and earn money when others save</p>
 				
 				<div class="btn"><button class="btn1" type="button">Get Started</button></div>
 			
 			</div>
 		</div>
+		
+	
 	</div>
+
+	<!-- NAVIGATION -->
+		<div class="navbar">
+				<div class="nav-link">
+						<a href="User.html" style="background: #e6e3e3a8; color: #0e0e2e;">
+							<div><i class="fas fa-home"></i></div>
+							<div>Dashboard</div>
+						</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="#">
+						<div><i class="fas fa-piggy-bank bk"></i></div>
+						<div>Settings</div>
+					</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="#">
+						<div><i class="fas fa-coins"></i></div>
+						<div>Loans</div>
+					</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="#">
+						<div><i class="fas fa-project-diagram"></i></div>
+						<div>Facilitators</div>
+					</a>
+				</div>
+
+				<div class="nav-link">
+					<a href="#">
+						<div><i class="fas fa-user"></i></div>
+						<div>Profile</div>
+					</a>
+				</div>
+		</div>
 </body>

@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
-<link rel="stylesheet" href="admin.css">
-<script src="https://kit.fontawesome.com/e798a7469a.js" crossorigin="anonymous"></script>
-<title>Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="admin.css">
+	<script src="https://kit.fontawesome.com/e798a7469a.js" crossorigin="anonymous"></script>
+	<title>Admin</title>
 </head>
 <body>
 	<div class="container">
@@ -12,23 +18,23 @@
 				<div class="column1">
 					<div class="money first">
 						<div class="tag">Platform Balance</div>
-					<span class="naira-value"> ₦1,230,800</span>
+						<span class="naira-value"> ₦1,230,800</span>
 					</div>
 					
 					<div class="money second">
-					<div class="tag">Total Credit</div>
-					<span class="naira-value"> ₦1,230,800</span>
+						<div class="tag">Total Credit</div>
+						<span class="naira-value"> ₦1,230,800</span>
 					</div>
 					
 					<div class="money third">
-					<div  class="tag">Total Deposit</div>
-					<span class="naira-value"> ₦230,800</span>
+						<div  class="tag">Total Deposit</div>
+						<span class="naira-value"> ₦230,800</span>
 					</div>
 					
 				</div>
 				
 				<div  class="column2">
-					<p>Transactions</p>
+					<p class= "trans" >Transactions</p>
 					<div class="typesearch">
 						
 						<i class="fa fa-search"></i><input type="text" name="" placeholder="search">
@@ -36,7 +42,7 @@
 				</div>
 				
 				<div class="filter">
-					<label for="Filter">Filter:</label>
+					<label for="Filter" class="trans">Filter:</label>
 						<div class="Byservice select">
 						<input type="text" name="payment" placeholder="By Service">
 						</div>
@@ -55,37 +61,45 @@
 		
 		
 		<!-- Transaction Table -->
-		<section class="transactions">
+		<section class="transactions-tab">
 			<div>
 				<table>
-					<tr>
-						<th>#</th>
-						<th>Tx ID</th>
-						<th>User ID</th>
-						<th>Service</th>
-						<th>Tx Type</th>
-						<th>Amount</th>
-					<tr>	
-						<td>1</td>
-						<td>Tx35627</td>
-						<td>ID88483</td>
-						<td>Contribution</td>
-						<td class="third">Debit</td>
-						<td>1,500,000</td>
-					<tr>
-						<td>2</td>
-						<td>Tx09387</td>
-						<td>AD488</td>
-						<td>Fixed Deposit</td>
-						<td class="second">Credit</td>
-						<td>500,000</td>
-					<tr>
-						<td>3</td>
-						<td>Tx277884</td>
-						<td>ID88948</td>
-						<td>Loans</td>
-						<td class="second">Credit</td>
-						<td>850,000</td>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Tx ID</th>
+							<th>User ID</th>
+							<th>Service</th>
+							<th>Tx Type</th>
+							<th>Amount</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>	
+							<td>1</td>
+							<td>Tx35627</td>
+							<td>ID88483</td>
+							<td>Contribution</td>
+							<td class="third">Debit</td>
+							<td>1,500,000</td>
+						</tr>	
+						<tr>
+							<td>2</td>
+							<td>Tx09387</td>
+							<td>AD488</td>
+							<td>Fixed Deposit</td>
+							<td class="second">Credit</td>
+							<td>500,000</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Tx277884</td>
+							<td>ID88948</td>
+							<td>Loans</td>
+							<td class="second">Credit</td>
+							<td>850,000</td>
+						</tr>
+					</tbody>	
 				</table>		
 			</div>
 		</section>

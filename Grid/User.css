@@ -3,21 +3,59 @@
 	padding: 0;
 }
 body{
-	font-family: sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	
 }
-.container{
-	padding: 25px;
+.side-menu{
+	display: none;
 }
+/* NAVBAR */
+.navbar{
+	height: 60px;
+	width: auto;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	position: sticky;
+	z-index: 1;
+	bottom: 0;
+	box-sizing: border-box;
+	
+}
+.navbar .nav-link{
+	font-size: 11px;
+	display: flex;
+	padding: 0px 2px;
+	margin: 0;
+}
+.navbar .nav-link a{
+	padding: 15px 10px;
+	color: #808080;
+}
+.navbar .nav-link i{
+	margin-left: 12px;
+}
+.navbar .nav-link:hover{
+	background: #e6e3e3a8;
+	color: #0e0e2e;
+	transition: .7s;
+}
+.container{
+	padding: 15px;
+	grid-area: right;
+}
+
 .container .head{
 	font-size: 30px;
 }
-
 .money{
 	display: block;
 	height: 130px;
 	width: auto;
-	background: linear-gradient(to bottom, rgb(7, 173, 173), rgb(8, 38, 38));
+	background: linear-gradient(to bottom, #07adad, #032735);
 	color: white;
 	font-size: 14px;
 	line-height: 30px;
@@ -27,37 +65,43 @@ body{
 	border-radius: 20px;
 }
 .tag{
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .naira-value{
 	font-size: 40px;
 	margin-top: 10px;
 }
+
+/* SAVINGS */
 .savings{
 	height: 100px;
 	width: auto;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	justify-items: start; 
-	background: whitesmoke;
-	color: gray;
+	background: #e6e3e3a8;
+	color: #383744;
 	box-sizing: border-box;
 	padding: 15px;
 	margin: 15px 0;
 	border-radius: 5px;
 }
-.fa-piggy-bank{
+.savings .fa-piggy-bank{
 	align-items: left;
-	font-size: 20px;
+	font-size: 18px;
 	color: #4fd152;
 }
-.fa-suitcase{
-	font-size: 20px;
-	color: #57628c;
+.savings .fa-suitcase{
+	font-size: 18px;
+	color: #4a547e;
 }
 .center{
+	font-size: 14px;
 	display: justify;
 	align-items: center;
+}
+.right{
+	font-size: 14px;
 }
 .head2{
 	font-size: 22px;
@@ -71,7 +115,7 @@ a{
 	text-decoration: none;
 	color: black;
 }
-.Facilitator{
+.facilitator{
 	width: auto;
 	height: 400px;
 	background: white;
@@ -81,12 +125,12 @@ a{
 	border-radius: 5px;
 	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
 }
-.Facilitator .p1{
+.facilitator .p1{
 	font-size: 28px;
 	padding: 20px 0 5px;
 	text-align: center;
 }
-.Facilitator .p2{
+.facilitator .p2{
 	font-size: 16px;
 	text-align: center;
 }
@@ -114,7 +158,55 @@ img{
 	border-radius: 50px;
 }
 	
-@media(min-width:800px){
+@media screen and (min-width:700px){
+	.side-menu{
+		position: fixed;
+		background: #0e0e2e;
+		width: 17%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 80px 5px 90px 0; 
+	}
+	.side-menu li{
+		list-style: none;
+		font-size: 14px;
+		padding: 10px 50px 10px 20px;
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+	}
+	.side-menu a{
+		text-decoration: none;
+		color: #fff;
+		padding: 10px 20px 10px 10px;
+		border-radius: 5px;
+	}
+	.side-menu a:hover{
+		color: #0e0e2e!important;
+		background: #fff;
+		transition: .5s;
+	}
+	.side-menu .logout{
+		color: #fff;
+		font-size: 14px;
+		padding: 10px 15px;
+		border-radius: 5px;
+	}
+	.bk, .fa-coins, .fa-project-diagram, .fa-user, .fa-home, .fa-sign-out-alt{
+	font-size: 12px;
+	margin-right: 10px;
+	}
+	.container{
+		width: 80%;
+		position: relative;
+		left: 18%;
+		box-sizing: border-box;
+	}
+	.navbar{
+		display: none;
+	}
 	.firstgrid{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
