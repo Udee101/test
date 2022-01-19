@@ -11,8 +11,49 @@
 	<title>User Dashboard</title>
 </head>
 <body>
+
+	<!-- POP UP FORM FOR NEW USER -->
+	<div id="pop-up-bg">
+		<div class="pop-up-container">
+			<div class="head">
+				<div class="n-user">
+					Add User
+				</div>
+				<div class="close-pop-up">
+					<h4>&times;</h4>
+				</div>
+			</div>
+
+			<form method="post" class="form-content">
+				<div>
+					<label for="last-name">Last Name</label>
+					<input type="text" name="" placeholder="Last Name" required>
+				</div>
+
+				<div>
+					<label for="first-name">First Name</label>
+					<input type="text" name="" placeholder="First Name" required>
+				</div>
+
+				<div>
+					<label for="email">Email</label>
+					<input type="email" name="" placeholder="Email">
+				</div>
+
+				<div>
+					<label for="phone">Phone</label>
+					<input type="text" name="" placeholder="Phone">
+				</div>
+
+				<button type="submit" class="s-btn">Save</button>
+			</form>
+				
+		</div>
+	</div>
+
+
+	<!-- SIDE MENU-->
 	
-	<!-- SIDE MENU -->
 	<div class= "side-menu">
 		<ul>
 			<li><a href="User.html" style="background: #fff; color:#0e0e2e;"><i class="fas fa-home"></i>Dashboard</a></li>
@@ -24,27 +65,42 @@
 		<div class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></div>
 	</div>
 	
-	<div class="container">
-	
-	<!--------- Loans ---------->
-	<p class="head">Hi, Raphael</p>
-		<div class="firstgrid">
-			<div class="money first">
-			<div class="tag">Total Savings</div>
-			<span class="naira-value"> ₦5,000</span>
-			</div>
-			
-			<div class="money second">
-			<div class="tag">Total Fixed</div>
-			<span class="naira-value"> ₦350,000</span>
-			</div>
-			
-			<div class="money third">
-			<div class="tag">Total Loans</div>
-			<span class="naira-value"> ₦1,500,000</span>
-			</div>
-			
+
+	<!-- SIDE MENU FOR MOBILE VIEW -->
+
+	<div id="side-bar-bg">
+		<div class="side-bar">
+			<div id="close">&times;</div>
+			<a href="User.html" style="background: #fff; color:#0e0e2e;"><i class="fas fa-home icn"></i>Dashboard</a>
+			<a href="#"><i class="fas fa-piggy-bank icn"></i>Savings</a>
+			<a href="#"><i class="fas fa-coins icn"></i>Loans</a>
+			<a href="#"><i class="fas fa-project-diagram icn"></i>Facilitators</a>
+			<a href="#"><i class="fas fa-user icn"></i>Profile</a>
 		</div>
+	</div>
+
+
+	<div class="container">
+		<div id="open">&#9776;</div>
+		<!--------- Loans ---------->
+		<p class="head">Hi, Raphael</p>
+			<div class="firstgrid">
+				<div class="money first">
+				<div class="tag">Total Savings</div>
+				<span class="naira-value"> ₦5,000</span>
+				</div>
+				
+				<div class="money second">
+				<div class="tag">Total Fixed</div>
+				<span class="naira-value"> ₦350,000</span>
+				</div>
+				
+				<div class="money third">
+				<div class="tag">Total Loans</div>
+				<span class="naira-value"> ₦1,500,000</span>
+				</div>
+				
+			</div>
 		
 		<!---------- Savings ----------->
 		<div class="main">
@@ -123,6 +179,8 @@
 				<div class="view"><a href="#">View all....</a></div>
 				
 			</div>
+
+			
 			
 			
 			<!-- Facilitator -->
@@ -131,13 +189,15 @@
 				<div class="image"><img src="/images/001.jpg"></div>
 				<p class="p2">Become a facilitator and earn money when others save</p>
 				
-				<div class="btn"><button class="btn1" type="button">Get Started</button></div>
+				<div class="btn"><button id="open-pop-up" class="btn1" type="button">Get Started</button></div>
 			
 			</div>
 		</div>
 		
-	
+			
 	</div>
+	
+	
 
 	<!-- NAVIGATION -->
 		<div class="navbar">
@@ -176,4 +236,6 @@
 					</a>
 				</div>
 		</div>
+
+		<script src="user.js"></script>
 </body>

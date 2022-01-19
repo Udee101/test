@@ -43,11 +43,12 @@ body{
 	color: #0e0e2e;
 	transition: .7s;
 }
+
+/* FUNDS DISPLAY */
 .container{
 	padding: 15px;
 	grid-area: right;
 }
-
 .container .head{
 	font-size: 30px;
 }
@@ -157,7 +158,140 @@ img{
 	border: none;
 	border-radius: 50px;
 }
-	
+.btn1:hover{
+	background: #078627;
+	cursor: pointer;
+	transition: .5s;
+}
+
+/* ADD USER POP UP */
+#pop-up-bg{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+.pop-up-container{
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	background: #fff;
+	margin-left: 37.5%;
+	padding: 20px;
+}
+.head{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.n-user{
+	font-size: 24px;
+}
+.close-pop-up{
+	font-size: 24px;
+	cursor: pointer;
+}
+.form-content{
+	width: 92%;
+	margin-left: 2.5%;
+}
+.form-content label{
+	font-size: 16px;
+	display: block;
+	margin-top: 25px;
+}
+.form-content input{
+	width: 100%;
+	height: 35px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background: rgba(243, 239, 238, 0.897);
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	padding: 5px 7px;
+}
+.s-btn{
+	width: 40%;
+	height: 40px;
+	color: #fff;
+	background: #1a6ece;
+	border: none;
+	border-radius: 20px;
+	font-size: 12px;
+	margin-top: 25px;
+	margin-left: 30%;
+}
+.s-btn:hover{
+	background: #164c8a;
+	transition: .5s;
+	cursor: pointer;
+}
+
+
+/* ////////////////////////////////////// */
+#side-bar-bg{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 15;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+.side-bar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 150px 10px 20px 20px;
+	z-index: 15;
+	height: 100%;
+	width: 55%;
+	background: #0e0e2e;
+}
+.side-bar a{
+	display: block;
+	margin: 30px 20px ;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 25px 10px 10px;
+	border-radius: 5px;
+}
+.side-bar a:hover{
+	color: #0e0e2e!important;
+	background: #fff;
+	transition: .5s;
+}
+.side-bar .logout{
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+.icn{
+font-size: 12px;
+margin-right: 10px;
+}
+.side-bar #close{
+	font-size: 36px;
+	position: absolute;
+	top: 2%;
+	left: 85%;
+	color: #fff;
+	cursor: pointer;
+}
+#open{
+	font-size: 30px;
+	color: #000;
+	cursor: pointer;
+}
+/* ///////////////////////////////////// */
+
 @media screen and (min-width:700px){
 	.side-menu{
 		position: fixed;
@@ -198,6 +332,15 @@ img{
 	font-size: 12px;
 	margin-right: 10px;
 	}
+
+	/* HAMBURGER MENU */
+	#side-bar-bg{
+	display: none;
+	}
+	#open{
+		display: none;
+	}
+
 	.container{
 		width: 80%;
 		position: relative;
